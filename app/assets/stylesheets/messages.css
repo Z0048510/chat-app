@@ -5,22 +5,52 @@
 .side-bar{
   height: 100vh;
   width: 300px;
-  background-color: #253141;
 }
 
 .side-header{
   height: 100px;
   padding: 0 20px;
+  background-color: #253141;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info a{ 
+  color: #FAFAFA;
+  size: 16px;
+  text-decoration: none;
+}
+
+.chat-create{
+  font-size: 10px;
+}
+
+.chat-create a{
+  color: deepskyblue;
+  padding: 14px;
+  border: lightblue 1px solid;
+  text-decoration: none;
 }
 
 .side-main{
-  height: calc(100vh-100px);
+  height: calc(100vh - 100px);
   background-color: #2f3e51;
   padding: 0 20px;
+  overflow: scroll;
+}
+
+.chat-list{
+  padding: 20px 0 40px;
+}
+
+.chat-name a{
+  text-decoration: none;
+  color: white;
 }
 
 .chat{
-  width: calc(100%-300px);
+  width: calc(100% - 300px);
   background-color: #ffffff;
 }
 
@@ -30,7 +60,7 @@
 }
 
 .chat-main{
-  height: calc(100vh-100px-90px);
+  height: calc(100vh - 100px - 90px);
   background-color: #FAFAFA;
   padding: 46px 40px 0px;
 }
