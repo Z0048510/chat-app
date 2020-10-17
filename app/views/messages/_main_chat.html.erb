@@ -30,13 +30,13 @@
   </div>
 </div>
 
-<div class="chat-footer">
+<%= form_with mode: [@room, @message], class: 'chat-footer', local: true do |f| %>
   <div class="footer-form">
-    <input type="text" placeholder="type a message" class="input-field">
+  <%= f.text_field :content, class: 'input-field', placeholder: 'type a message' %>
     <label class="image-form">
       <span class="image-file">画像</span>
-      <input type="file" class="hidden">
+      <%= f.file_field :image, class: 'hidden' %>
     </label>
   </div>
-  <input type="submit" value="送信" class="send">
-</div>
+  <%= f.submit '送信', class: 'send' %>
+<% end %>
