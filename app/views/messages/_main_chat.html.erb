@@ -16,7 +16,7 @@
   <%= render partial: 'message', collection: @messages %>
 </div>
 
-<%= form_with mode: [@room, @message], class: 'chat-footer', local: true do |f| %>
+<%= form_with model: [@room, @message], class: 'chat-footer', local: true do |f| %>
   <div class="footer-form">
   <%= f.text_field :content, class: 'input-field', placeholder: 'type a message' %>
     <label class="image-form">
